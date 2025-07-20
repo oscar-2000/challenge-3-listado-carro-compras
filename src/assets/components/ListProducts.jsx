@@ -43,7 +43,7 @@ export default function Products({products}) {
                 </div>
                 ) : (
                 <button onClick={() => agregarAlCarro(item.id)} className="mx-auto w-[60%] -mt-7 z-10 relative flex flex-row gap-2 items-center justify-center p-2 rounded-full bg-white border-gray-400 hover:border-orange-400 duration-300 border-[1px] cursor-pointer">
-                    <img src="./public/img/icon-add-to-cart.svg" className="h-4" alt="Add to cart" />
+                    <img src="/img/icon-add-to-cart.svg" className="h-4" alt="Add to cart" />
                     <span className="text-orange-900 fw-semibold">Add to cart</span>
                 </button>
                 )}

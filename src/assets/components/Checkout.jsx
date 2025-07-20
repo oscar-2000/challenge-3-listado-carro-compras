@@ -59,7 +59,7 @@ export default function Checkout() {
                     <p className="text-2xl font-bold text-orange-950">${total}</p>
                 </div>
                 <div className="flex flex-row gap-2 items-center justify-center bg-[#fcf8f5] p-4 rounded-lg">
-                    <img src="./public/img/icon-carbon-neutral.svg" className="h-5 w-auto" alt="Carbon neutral" />
+                    <img src="/img/icon-carbon-neutral.svg" className="h-5 w-auto" alt="Carbon neutral" />
                     <p className="text-md text-orange-950">This is a <span className="font-bold">carbon-neutral</span> delivery</p>
                 </div>
                 <button onClick={showModal} className="cursor-pointer mt-4 p-4 rounded-full bg-orange-500 hover:bg-orange-950 duration-300 text-white text-lg font-semibold">Confirm Order</button>
@@ -71,7 +71,7 @@ export default function Checkout() {
                 >
                     <div className="flex flex-col items-start gap-y-4 my-10">
                         <div className="flex flex-row items-center gap-2">
-                            <img src="./public/img/icon-order-confirmed.svg" className="h-9 w-auto"/>
+                            <img src="/img/icon-order-confirmed.svg" className="h-9 w-auto"/>
                             <p className="font-bold text-orange-950 text-3xl">Order Confirmed</p>
                         </div>
                         <p className="text-orange-950">We hope you enjoy your food!</p>
@@ -109,7 +109,7 @@ export default function Checkout() {
                 </> 
                 : 
                 <div className="flex flex-col items-center justify-center my-5">
-                    <img src="./public/img/illustration-empty-cart.svg" className="h-44 w-auto" alt="Empty cart" />
+                    <img src="/img/illustration-empty-cart.svg" className="h-44 w-auto" alt="Empty cart" />
                     <p className="text-[#5a4e4a]/70 text-md font-bold">You added items will appear here</p>
                 </div>
                 }
