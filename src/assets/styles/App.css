@@ -1,9 +1,22 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+@font-face {
+    font-family: 'RedHat-Regular';
+    src: url(/fonts/RedHatText-Regular.ttf);
+}
+@font-face {
+    font-family: 'RedHat-Bold';
+    src: url(/fonts/RedHatText-Bold.ttf);
+}
+@font-face {
+    font-family: 'RedHat-SemiBold';
+    src: url(/fonts/RedHatText-SemiBold.ttf);
+}
 
 body {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'RedHat-Regular',sans-serif;
 }
 
 p {
