@@ -9,13 +9,13 @@ export default function Products({products}) {
         <>
         {data.map(item => {
           return(
-            <div key={item.id}>
-                <div className="overflow-hidden h-56 rounded-2xl relative z-0">
+            <div key={item.id} className="group relative">
+                <div className="overflow-hidden h-56 rounded-2xl relative z-0 before:absolute before:h-full before:w-full before:bg-black/30 before:z-20 before:opacity-0 before:duration-300 group-hover:before:opacity-100">
                     <picture>
                         <source media="(min-width: 1024px)" srcSet={item.image.desktop} />
                         <source media="(min-width: 768px)" srcSet={item.image.tablet} />
                         <source media="(max-width: 767px)" srcSet={item.image.mobile} />
-                        <img src={item.image.thumbnail} alt={item.name} className="h-64 w-auto absolute rounded-3 bg-center" />
+                        <img src={item.image.thumbnail} alt={item.name} className="h-64 w-auto absolute rounded-3 bg-center z-10" />
                     </picture>
                 </div>
                 {carritoIds.has(item.id) ? (
